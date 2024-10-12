@@ -1,11 +1,12 @@
 {
   "name": "@nrksolusi/core",
-  "version": "1.3.2",
+  "version": "1.3.5",
   "description": "Navya Raksha Karya Core Library",
   "main": "index.js",
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "release": "npm run build",
+    "publish": "npm run build && npx semantic-release",
     "test": ""
   },
   "repository": {
