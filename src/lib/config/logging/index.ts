@@ -1,3 +1,3 @@
 // @ravana/core/lib/logging/index.ts
-export * from "./config";
-export * from "./logging";
+export { LoggingConfig } from "./config";
+export { Logging, log } from "./logging";

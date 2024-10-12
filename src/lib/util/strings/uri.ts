@@ -16,7 +16,6 @@ const charMap: { [key: string]: string } = {
   "#": "%23",
 };
 
-export const toUri = (str: string): string => {
-  return encodeURIComponent(str.toLowerCase()) // Convert to lowercase first
-    .replace(/[!'\(\)\*\s@$,;:=\/&#]/g, (match) => charMap[match]); // Replace all at once
-};
+export const toUri = (str: string) => 
+  encodeURIComponent(str.toLowerCase()) // Convert to lowercase first
+    .replace(/[!'\(\)\*\s@$,;:=\/&#]/g, (match) => charMap[match] || match); // Fallback to match if undefined

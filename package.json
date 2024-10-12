@@ -1,10 +1,11 @@
 {
   "name": "@nrksolusi/core",
-  "version": "1.4.0",
+  "version": "1.4.2",
   "description": "Navya Raksha Karya Core Library",
   "main": "dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "build": "tsc",
     "release": "npm run build",
     "publish": "npm run build && npx semantic-release",
     "test": ""
@@ -13,7 +14,6 @@
     "type": "git",
     "url": "git+https://github.com/navyarakshakarya/core.git"
   },
-  "types": "./dist/index.d.ts",
   "keywords": [
     "core",
     "library"
@@ -29,7 +29,6 @@
     "mongoose": "^8.7.1",
     "tslib": "^2.7.0",
     "tsup": "^8.3.0",
-    "typescript": "^5.6.3",
     "uuid": "^10.0.0",
     "winston": "^3.15.0",
     "zod": "^3.23.8"
@@ -43,7 +42,8 @@
     "@types/uuid": "^10.0.0",
     "jsonwebtoken": "^9.0.2",
     "semantic-release": "^24.1.2",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
   },
   "files": [
     "dist/*",

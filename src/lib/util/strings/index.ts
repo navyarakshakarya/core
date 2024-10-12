@@ -1,1 +1,1 @@
-export * from "./uri"
+export { toUri } from "./uri"
