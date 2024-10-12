@@ -1,3 +1,3 @@
 // @ravana/core/lib/mongo/config.ts
-export * from "./config";
-export * from "./mongo";
+export { MongoConfig } from "./config";
+export { Mongo } from "./mongo";
